@@ -23,11 +23,11 @@ header{background:#d4af37!important;background-image:none!important}
 <img id="apercuTravaux" alt="Photo de la pièce" style="display:none;max-width:100%;border-radius:12px;margin-top:12px">
 <script>
 document.getElementById('photoTravaux').addEventListener('change',function(){
-const f=this.files[0];
+const fichiers=Array.from(this.files); const f=fichiers[0];
 if(!f)return;
 const img=document.getElementById('apercuTravaux');
-img.src=URL.createObjectURL(f);
-img.style.display='block';
+img.outerHTML='<div id="apercuTravaux">'+fichiers.map(f=>'<img src="'+URL.createObjectURL(f)+'" style="width:180px;max-width:100%;margin:5px;border-radius:12px">').join('')+'</div>';
+
 });
 </script>
 </section>
