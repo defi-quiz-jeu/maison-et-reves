@@ -1,0 +1,19 @@
+
+{
+  "name": "Maison & Rêves",
+  "short_name": "Maison & Rêves",
+  "description": "Application gratuite de décoration et de rénovation",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fff8e7",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "F045A5FE-9C9A-4C60-B980-FC09F25B269B.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
