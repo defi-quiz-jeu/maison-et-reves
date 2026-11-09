@@ -19,7 +19,7 @@ header{background:#d4af37!important;background-image:none!important}
 <section class="panel">
 <h2>📸 Analyse des travaux par photo</h2>
 <p>Ajoute une photo de ta pièce pour préparer une analyse des travaux à réaliser.</p>
-<input type="file" accept="image/*" capture="environment" id="photoTravaux">
+<input type="file" accept="image/*" capture="environment" id="photoTravaux" multiple>
 <img id="apercuTravaux" alt="Photo de la pièce" style="display:none;max-width:100%;border-radius:12px;margin-top:12px">
 <script>
 document.getElementById('photoTravaux').addEventListener('change',function(){
